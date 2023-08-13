@@ -19,7 +19,7 @@ export const Navbar = () => {
     <>
       <div className="text-white bg-purple-700 px-4 md:px-12 flex flex-row justify-between items-center">
         <div>Logo</div>
-        <div className="hidden md:flex space-x-1 text-sm py-4">
+        <div className="hidden md:flex space-x-1 text-xs py-4">
           <span>Selamat Datang di </span>
           <span className="uppercase font-semibold">
             PT. RIHLAH DUTA AMANAH
