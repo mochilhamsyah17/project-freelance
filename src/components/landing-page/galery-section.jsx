@@ -5,7 +5,7 @@ export const GallerySection = () => {
         <span className="text-purple-700 font-bold text-center w-full">
           Gallery
         </span>
-        <div className="grid cols"></div>
+        <div className="grid fridcols"></div>
       </div>
     </>
   );

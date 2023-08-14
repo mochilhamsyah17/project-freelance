@@ -32,55 +32,60 @@ export default class SimpleSlider extends Component {
       height: "100%",
       cursor: "pointer",
       color: "#ffffff",
-      backdropFilter: "saturate(180%) blur(100px) opacity(0.6)",
-      webkitBackdropFilter: "blur(10px)",
+      backdropFilter: "saturate(180%) blur(100px) opacity(0.3)",
+      WebkitBackdropFilter: "blur(10px)",
     };
 
     return (
-      <div className="max-w-screen">
-        <Carousel
-          showArrows={true}
-          renderArrowPrev={(onClickHandler, hasPrev, label) =>
-            hasPrev && (
-              <button
-                type="button"
-                onClick={onClickHandler}
-                title={label}
-                style={{ ...arrowStyles, left: 0 }}
-              >
-                <span className="w-full flex justify-center font-bold text-white">
-                  <GrPrevious />
-                </span>
-              </button>
-            )
-          }
-          renderArrowNext={(onClickHandler, hasNext, label) =>
-            hasNext && (
-              <button
-                type="button"
-                onClick={onClickHandler}
-                title={label}
-                style={{ ...arrowStyles, right: 0 }}
-              >
-                <span className="w-full flex justify-center font-bold text-white">
-                  <GrNext />
-                </span>
-              </button>
-            )
-          }
-          showStatus={false}
-        >
-          {banner.map((items, index) => {
-            return (
-              <Image
-                src={items.img}
-                key={index}
-                alt="banner"
-                className="w-1/3 h-[512px]"
-              />
-            );
-          })}
-        </Carousel>
+      <div className=" flex justify-center items-center max-w-screen">
+        <div className="w-full">
+          <Carousel
+            autoPlay
+            infiniteLoop
+            centerMode
+            showArrows={true}
+            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+              hasPrev && (
+                <button
+                  type="button"
+                  onClick={onClickHandler}
+                  title={label}
+                  style={{ ...arrowStyles, left: 0 }}
+                >
+                  <span className="w-full flex justify-center font-bold text-white">
+                    <GrPrevious />
+                  </span>
+                </button>
+              )
+            }
+            renderArrowNext={(onClickHandler, hasNext, label) =>
+              hasNext && (
+                <button
+                  type="button"
+                  onClick={onClickHandler}
+                  title={label}
+                  style={{ ...arrowStyles, right: 0 }}
+                >
+                  <span className="w-full flex justify-center font-bold text-white">
+                    <GrNext />
+                  </span>
+                </button>
+              )
+            }
+            showStatus={false}
+          >
+            {banner.map((items, index) => {
+              return (
+                <Image
+                  src={items.img}
+                  key={index}
+                  alt="banner"
+                  className="lg:h-[600px] h-[512px]"
+                />
+              );
+            })}
+          </Carousel>
+        </div>
       </div>
     );
   }

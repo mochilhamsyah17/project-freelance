@@ -1,27 +1,62 @@
-"use client";
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { GrPrevious } from "react-icons/gr";
+import banner1 from "../../../public/assets/banner/banner1.webp";
+import banner2 from "../../../public/assets/banner/banner2.webp";
+import banner3 from "../../../public/assets/banner/banner3.webp";
+import Image from "next/image";
 
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-import "react-alice-carousel/lib/scss/alice-carousel.scss";
-import SimpleSlider from "./carousel2";
-
-export const CarouselSection = () => {
-  const banner = [1, 2, 3];
-  return (
-    <div className="mb-4">
-      {/* <AliceCarousel mouseTracking items={banner} /> */}
-      {/* <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper> */}
-      <SimpleSlider />
-    </div>
-  );
-};
+export default class SimpleSlider extends Component {
+  render() {
+    const banner = [
+      {
+        img: banner1,
+      },
+      {
+        img: banner2,
+      },
+      {
+        img: banner3,
+      },
+    ];
+    const arrowStyles = {
+      position: "absolute",
+      zIndex: 2,
+      top: 0,
+      width: 30,
+      height: "100%",
+      cursor: "pointer",
+      color: "#ffffff",
+      backdropFilter: "saturate(180%) blur(100px) opacity(0.3)",
+      WebkitBackdropFilter: "blur(10px)",
+    };
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: (
+        <button type="button" style={{ ...arrowStyles, left: 0 }}>
+          <span className="w-full flex justify-center font-bold text-white">
+            <GrPrevious />
+          </span>
+        </button>
+      ),
+    };
+    return (
+      <div className="max-w-screen">
+        <Slider {...settings}>
+          <div>
+            <Image src={banner1} alt="banner" className="w-1/2" />
+          </div>
+          <div>
+            <Image src={banner2} alt="banner" className="w-1/2" />
+          </div>
+        </Slider>
+      </div>
+    );
+  }
+}
