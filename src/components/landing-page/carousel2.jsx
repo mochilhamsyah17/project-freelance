@@ -32,7 +32,8 @@ export default class SimpleSlider extends Component {
       height: "100%",
       cursor: "pointer",
       color: "#ffffff",
-      backdropFilter: "blur(200px) opacity(0.6)",
+      backdropFilter: "saturate(180%) blur(100px) opacity(0.6)",
+      webkitBackdropFilter: "blur(10px)",
     };
 
     return (
@@ -47,7 +48,7 @@ export default class SimpleSlider extends Component {
                 title={label}
                 style={{ ...arrowStyles, left: 0 }}
               >
-                <span className="w-full flex justify-center font-bold">
+                <span className="w-full flex justify-center font-bold text-white">
                   <GrPrevious />
                 </span>
               </button>
@@ -61,7 +62,7 @@ export default class SimpleSlider extends Component {
                 title={label}
                 style={{ ...arrowStyles, right: 0 }}
               >
-                <span className="w-full flex justify-center font-bold">
+                <span className="w-full flex justify-center font-bold text-white">
                   <GrNext />
                 </span>
               </button>
