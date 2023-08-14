@@ -1,4 +1,4 @@
-// Framer motion animation config
+//animasi navbar
 export const textVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0 },

@@ -5,7 +5,7 @@ import { FaDollarSign } from "react-icons/fa";
 
 export const Card1Section = () => {
   return (
-    <>
+    <div className="md:px-12 px-4 mb-4">
       <div className="px-20 w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid gap gap-4 justify-center items-center">
         <div className="w-full relative text-center ">
           <div className="w-fit absolute left-[45.5%]">
@@ -72,6 +72,6 @@ export const Card1Section = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

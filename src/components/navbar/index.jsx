@@ -9,6 +9,9 @@ import {
   mobileNavListVariant,
   mobileNavExitProps,
 } from "@/data/animationConfig";
+import Image from "next/image";
+import logo from "../../../public/assets/logo/main-logo.webp";
+import logo2 from "../../../public/assets/logo/slogan.webp";
 
 export const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -17,8 +20,11 @@ export const Navbar = () => {
   };
   return (
     <>
-      <div className="text-white bg-purple-700 px-4 md:px-12 flex flex-row justify-between items-center">
-        <div>Logo</div>
+      <div className="text-white bg-purple-800 px-4 md:px-12 flex flex-row justify-between items-center">
+        <div className="flex flex-row py-4 md:py-2">
+          <Image src={logo} className="w-20" alt="logo" />
+          <Image src={logo2} className="w-[110px]" alt="slogan" />
+        </div>
         <div className="hidden md:flex space-x-1 text-xs py-4">
           <span>Selamat Datang di </span>
           <span className="uppercase font-semibold">
