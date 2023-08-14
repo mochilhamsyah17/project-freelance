@@ -8,7 +8,7 @@ export const Card1Section = () => {
     <div className="md:px-12 px-4 mb-4">
       <div className="px-10 lg:px-20 w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid gap gap-4 justify-center items-center">
         <div className="w-full relative text-center ">
-          <div className="border border-slate-300 my-4 rounded-lg py-10 flex flex-col px-4 space-y-4">
+          <div className="border border-slate-300 my-4 rounded-lg py-10 lg:py-8 flex flex-col px-4 space-y-4 md:space-y-1">
             <div className="w-fit absolute left-[45.5%] md:left-[44.5%] top-7 md:top-0">
               <div className="border-2 border-yellow-600 flex p-2 text-xl w-fit rounded-full text-yellow-700 bg-white">
                 <FaDollarSign />
@@ -24,7 +24,7 @@ export const Card1Section = () => {
           </div>
         </div>
         <div className="w-full relative text-center ">
-          <div className="border border-slate-300 my-4 rounded-lg py-10 flex flex-col px-4 space-y-4">
+          <div className="border border-slate-300 my-4 rounded-lg py-10 lg:py-8 flex flex-col px-4 space-y-4 md:space-y-1">
             <div className="w-fit absolute left-[45.5%] md:left-[44.5%] top-7 md:top-0">
               <div className="border-2 border-yellow-600 flex p-2 text-xl w-fit rounded-full text-yellow-700 bg-white">
                 <BsBagDashFill />
@@ -40,7 +40,7 @@ export const Card1Section = () => {
           </div>
         </div>
         <div className="w-full relative text-center ">
-          <div className="border border-slate-300 my-4 rounded-lg py-10 flex flex-col px-4 space-y-4">
+          <div className="border border-slate-300 my-4 rounded-lg py-10 lg:py-8 flex flex-col px-4 space-y-4 md:space-y-1">
             <div className="w-fit absolute left-[45.5%] md:left-[44.5%] top-7 md:top-0">
               <div className="border-2 border-yellow-600 flex p-2 text-xl w-fit rounded-full text-yellow-700 bg-white">
                 <BiLogoTelegram />
@@ -56,7 +56,7 @@ export const Card1Section = () => {
           </div>
         </div>
         <div className="w-full relative text-center ">
-          <div className="border border-slate-300 my-4 rounded-lg py-10 flex flex-col px-4 space-y-4">
+          <div className="border border-slate-300 my-4 rounded-lg py-10 lg:py-8 flex flex-col px-4 space-y-4 md:space-y-1">
             <div className="w-fit absolute left-[45.5%] md:left-[44.5%] top-7 md:top-0">
               <div className="border-2 border-yellow-600 flex p-2 text-xl w-fit rounded-full text-yellow-700 bg-white">
                 <AiOutlineLike />

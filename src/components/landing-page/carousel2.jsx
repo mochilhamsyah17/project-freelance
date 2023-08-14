@@ -22,7 +22,7 @@ const banner = [
   },
 ];
 
-export default class SimpleSlider extends Component {
+export default class SimpleSlider2 extends Component {
   render() {
     const arrowStyles = {
       position: "absolute",
@@ -37,7 +37,7 @@ export default class SimpleSlider extends Component {
     };
 
     return (
-      <div className=" flex justify-center items-center max-w-screen">
+      <div className="hidden md:flex lg:hidden justify-center items-center max-w-screen">
         <div className="w-full">
           <Carousel
             autoPlay
