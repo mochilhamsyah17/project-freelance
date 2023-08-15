@@ -12,7 +12,7 @@ export const BranchSection = () => {
         <Image
           src={bg1}
           alt="backgroudn-image"
-          className=" w-full h-full object-cover overflow-y-hidden"
+          className=" w-full min-h-full object-cover overflow-y-hidden"
         />
         <div className="w-full absolute top-0 z-20 bg-black bg-opacity-70 h-full">
           <div className="flex flex-col lg:flex-row h-full gap gap-0 lg:gap-8 ">
@@ -43,7 +43,7 @@ export const BranchSection = () => {
           Article
         </span>
         <div className="flex flex-col md:flex-row w-full gap-4">
-          <Image src={photo1} alt="photo" className="w-fit h-auto" />
+          <Image src={photo1} alt="photo" className="w-fit h-40" />
           <div className="flex flex-col">
             <span className="text-purple-700 text-base font-semibold">
               5 Hal Yang Harus Disiapkan Agar Cepat Berangkat Umrah
