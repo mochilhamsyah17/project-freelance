@@ -22,7 +22,7 @@ export const BranchSection = () => {
                 <Image
                   src={banner1}
                   alt="head office maps"
-                  className="w-fit h-1/2 lg:h-full"
+                  className="w-fit h-1/2 lg:h-auto"
                 />
               </div>
               <div className="flex flex-col h-full justify-center text-center space-y-2">
@@ -30,7 +30,7 @@ export const BranchSection = () => {
                 <Image
                   src={banner2}
                   alt="branch office maps"
-                  className="w-fit h-1/2 lg:h-full"
+                  className="w-fit h-1/2 lg:h-auto"
                 />
               </div>
             </div>
