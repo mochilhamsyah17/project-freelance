@@ -43,7 +43,7 @@ export const BranchSection = () => {
           Article
         </span>
         <div className="flex flex-col md:flex-row w-full gap-4">
-          <Image src={photo1} alt="photo" className="w-fit h-44" />
+          <Image src={photo1} alt="photo" className="w-fit h-auto" />
           <div className="flex flex-col">
             <span className="text-purple-700 text-base font-semibold">
               5 Hal Yang Harus Disiapkan Agar Cepat Berangkat Umrah
