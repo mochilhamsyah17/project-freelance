@@ -3,22 +3,22 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import banner1 from "../../../public/assets/banner/banner1.webp";
-import banner2 from "../../../public/assets/banner/banner2.webp";
-import banner3 from "../../../public/assets/banner/banner3.webp";
+import banner4 from "../../../public/assets/banner/banner4.jpeg";
+import banner5 from "../../../public/assets/banner/banner5.webp";
+import banner6 from "../../../public/assets/banner/banner6.webp";
 import { GrNext, GrPrevious } from "react-icons/gr";
 
 import Image from "next/image";
 
 const banner = [
   {
-    img: banner1,
+    img: banner4,
   },
   {
-    img: banner2,
+    img: banner5,
   },
   {
-    img: banner3,
+    img: banner6,
   },
 ];
 
@@ -37,7 +37,7 @@ export default class SimpleSlider extends Component {
     };
 
     return (
-      <div className=" flex md:hidden justify-center items-center max-w-screen">
+      <div className=" block  justify-center items-center max-w-screen">
         <div className="w-full">
           <Carousel
             autoPlay
@@ -79,7 +79,7 @@ export default class SimpleSlider extends Component {
                   src={items.img}
                   key={index}
                   alt="banner"
-                  className="lg:h-[600px] h-[512px]"
+                  className="lg:h-[600px] h-auto"
                 />
               );
             })}

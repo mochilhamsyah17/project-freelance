@@ -6,19 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 import banner1 from "../../../public/assets/banner/banner1.webp";
 import banner2 from "../../../public/assets/banner/banner2.webp";
 import banner3 from "../../../public/assets/banner/banner3.webp";
+import banner4 from "../../../public/assets/banner/banner4.jpeg";
 import { GrNext, GrPrevious } from "react-icons/gr";
 
 import Image from "next/image";
 
 const banner = [
   {
-    img: banner1,
-  },
-  {
-    img: banner2,
-  },
-  {
-    img: banner3,
+    img: banner4,
   },
 ];
 
@@ -37,12 +32,13 @@ export default class SimpleSlider2 extends Component {
     };
 
     return (
-      <div className="hidden md:flex lg:hidden justify-center items-center max-w-screen">
+      <div className="hidden md:block lg:hidden justify-center items-center max-w-screen">
         <div className="w-full">
           <Carousel
+            showThumbs={false}
             autoPlay
             infiniteLoop
-            centerMode
+            // centerMode
             showArrows={true}
             renderArrowPrev={(onClickHandler, hasPrev, label) =>
               hasPrev && (
@@ -80,7 +76,7 @@ export default class SimpleSlider2 extends Component {
                   src={items.img}
                   key={index}
                   alt="banner"
-                  className="lg:h-[600px] h-[512px]"
+                  className="lg:h-[600px] h-auto w-full"
                 />
               );
             })}

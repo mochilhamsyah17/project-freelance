@@ -11,7 +11,7 @@ import {
 export const Footer = () => {
   return (
     <div className="flex flex-col">
-      <div className="min-w-full bg-purple-800 text-white text-sm">
+      <div className="min-w-full bg-purple-800 text-white text-sm z-30">
         <div className="grid grid-cols-2 lg:grid-cols-4 px-4 md:px-12 py-4 gap gap-4 lg:gap-12 ">
           {/* head office */}
           <div className="flex flex-col space-y-4">

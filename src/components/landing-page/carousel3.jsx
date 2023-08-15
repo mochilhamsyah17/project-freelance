@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import banner1 from "../../../public/assets/banner/banner1.webp";
 import banner2 from "../../../public/assets/banner/banner2.webp";
 import banner3 from "../../../public/assets/banner/banner3.webp";
+import banner4 from "../../../public/assets/banner/banner4.jpeg";
 import "swiper/css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import Image from "next/image";
@@ -14,13 +15,7 @@ import { register } from "swiper/element/bundle";
 register();
 const banner = [
   {
-    img: banner1,
-  },
-  {
-    img: banner2,
-  },
-  {
-    img: banner3,
+    img: banner4,
   },
 ];
 
@@ -46,7 +41,7 @@ export const SimpleSlider3 = () => {
           ref={swiperElRef}
           modules={[Navigation, Pagination]}
           spaceBetween={10}
-          slidesPerView={2}
+          slidesPerView={1}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           pagination={{ clickable: true }}
@@ -55,7 +50,7 @@ export const SimpleSlider3 = () => {
           {banner.map((items, index) => {
             return (
               <SwiperSlide key={index}>
-                <Image src={items.img} alt="banner" className=" h-[512px]" />
+                <Image src={items.img} alt="banner" className="h-fit" />
               </SwiperSlide>
             );
           })}
