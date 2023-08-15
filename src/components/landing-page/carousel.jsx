@@ -6,8 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import banner4 from "../../../public/assets/banner/banner4.jpeg";
 import banner5 from "../../../public/assets/banner/banner5.webp";
 import banner6 from "../../../public/assets/banner/banner6.webp";
-import { GrNext, GrPrevious } from "react-icons/gr";
-import { FcPrevious } from "react-icons/fc";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 import Image from "next/image";

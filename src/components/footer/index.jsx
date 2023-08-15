@@ -83,19 +83,19 @@ export const Footer = () => {
           <div className="flex flex-col space-y-4">
             <div className="font-semibold uppercase">SOCIAL MEDIA</div>
             <div className="text-[10px] grid grid-cols-1 xl:grid-cols-2">
-              <div className="flex flex-row items-center gap gap-2">
+              <div className="flex flex-row items-center gap gap-2 cursor-pointer hover:underline">
                 <BsFacebook />
                 <span>Facebook</span>
               </div>
-              <div className="flex flex-row items-center gap gap-2">
+              <div className="flex flex-row items-center gap gap-2 cursor-pointer hover:underline">
                 <BsInstagram />
                 <span>Instagram</span>
               </div>
-              <div className="flex flex-row items-center gap gap-2">
+              <div className="flex flex-row items-center gap gap-2 cursor-pointer hover:underline">
                 <BsTiktok />
                 <span>TikTok</span>
               </div>
-              <div className="flex flex-row items-center gap gap-2">
+              <div className="flex flex-row items-center gap gap-2 cursor-pointer hover:underline">
                 <BsYoutube />
                 <span>Youtube</span>
               </div>
