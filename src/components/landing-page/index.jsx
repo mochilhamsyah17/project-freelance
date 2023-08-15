@@ -6,10 +6,12 @@ import { GallerySection } from "./galery-section";
 import SimpleSlider from "./carousel";
 import { TestimonySection } from "./testimony";
 import { BranchSection } from "./branch-office";
+import { Modal } from "../common/modal";
 export const ComponentLandingPage = () => {
   return (
     <>
       <div className="relative">
+        <Modal />
         <SimpleSlider />
         {/* <SimpleSlider2 />
         <SimpleSlider3 /> */}

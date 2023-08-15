@@ -7,6 +7,8 @@ import banner4 from "../../../public/assets/banner/banner4.jpeg";
 import banner5 from "../../../public/assets/banner/banner5.webp";
 import banner6 from "../../../public/assets/banner/banner6.webp";
 import { GrNext, GrPrevious } from "react-icons/gr";
+import { FcPrevious } from "react-icons/fc";
+import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 import Image from "next/image";
 
@@ -37,7 +39,7 @@ export default class SimpleSlider extends Component {
     };
 
     return (
-      <div className=" block  justify-center items-center max-w-screen">
+      <div className=" block justify-center items-center max-w-screen">
         <div className="w-full">
           <Carousel
             autoPlay
@@ -51,8 +53,8 @@ export default class SimpleSlider extends Component {
                   title={label}
                   style={{ ...arrowStyles, left: 0 }}
                 >
-                  <span className="w-full flex justify-center font-bold text-white">
-                    <GrPrevious />
+                  <span className="w-full flex justify-center font-extrabold text-white text-9xl">
+                    <MdNavigateBefore />
                   </span>
                 </button>
               )
@@ -65,8 +67,8 @@ export default class SimpleSlider extends Component {
                   title={label}
                   style={{ ...arrowStyles, right: 0 }}
                 >
-                  <span className="w-full flex justify-center font-bold text-white">
-                    <GrNext />
+                  <span className="w-full flex justify-center font-extrabold text-white text-9xl">
+                    <MdNavigateNext />
                   </span>
                 </button>
               )
