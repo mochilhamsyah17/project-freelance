@@ -11,7 +11,7 @@ export const ComponentLandingPage = () => {
   return (
     <>
       <div className="relative">
-        <Modal />
+        {/* <Modal /> */}
         <SimpleSlider />
         {/* <SimpleSlider2 />
         <SimpleSlider3 /> */}
