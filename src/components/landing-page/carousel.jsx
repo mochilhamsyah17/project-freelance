@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import banner4 from "../../../public/assets/banner/banner4.jpeg";
 import banner5 from "../../../public/assets/banner/banner5.webp";
 import banner6 from "../../../public/assets/banner/banner6.webp";
