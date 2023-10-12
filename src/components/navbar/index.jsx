@@ -36,12 +36,12 @@ export const Navbar = () => {
         </div>
       </div>
       <ul className="w-full hidden md:flex md:flex-row bg-slate-600 text-xs text-white px-4 space-x-0 space-y-4 md:space-y-0 md:space-x-14 md:px-12 py-2 items-center md:items-start">
-        <li className="uppercase">promo</li>
-        <li className="uppercase">home</li>
-        <li className="uppercase">products</li>
-        <li className="uppercase">visa & passport</li>
-        <li className="uppercase">gallery</li>
-        <li className="uppercase">about us</li>
+        <li className="uppercase cursor-pointer">promo</li>
+        <li className="uppercase cursor-pointer">home</li>
+        <li className="uppercase cursor-pointer">products</li>
+        <li className="uppercase cursor-pointer">visa & passport</li>
+        <li className="uppercase cursor-pointer">gallery</li>
+        <li className="uppercase cursor-pointer">about us</li>
       </ul>
       <AnimatePresence mode="wait">
         <motion.div
@@ -58,37 +58,49 @@ export const Navbar = () => {
                 variants={mobileNavListVariant}
                 {...mobileNavExitProps}
               >
-                <li className="uppercase">promo</li>
+                <li className="uppercase cursor-pointer hover:opacity-80">
+                  promo
+                </li>
               </motion.div>
               <motion.div
                 variants={mobileNavListVariant}
                 {...mobileNavExitProps}
               >
-                <li className="uppercase">home</li>
+                <li className="uppercase cursor-pointer hover:opacity-80">
+                  home
+                </li>
               </motion.div>
               <motion.div
                 variants={mobileNavListVariant}
                 {...mobileNavExitProps}
               >
-                <li className="uppercase">products</li>
+                <li className="uppercase cursor-pointer hover:opacity-80">
+                  products
+                </li>
               </motion.div>
               <motion.div
                 variants={mobileNavListVariant}
                 {...mobileNavExitProps}
               >
-                <li className="uppercase">visa & passport</li>
+                <li className="uppercase cursor-pointer hover:opacity-80">
+                  visa & passport
+                </li>
               </motion.div>
               <motion.div
                 variants={mobileNavListVariant}
                 {...mobileNavExitProps}
               >
-                <li className="uppercase">gallery</li>
+                <li className="uppercase cursor-pointer hover:opacity-80">
+                  gallery
+                </li>
               </motion.div>
               <motion.div
                 variants={mobileNavListVariant}
                 {...mobileNavExitProps}
               >
-                <li className="uppercase">about us</li>
+                <li className="uppercase cursor-pointer hover:opacity-80">
+                  about us
+                </li>
               </motion.div>
             </ul>
           )}
