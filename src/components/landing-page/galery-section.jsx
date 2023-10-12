@@ -3,13 +3,12 @@ import photo1 from "../../../public/assets/gallery/photo1.webp";
 import photo3 from "../../../public/assets/gallery/photo3.webp";
 import photo4 from "../../../public/assets/gallery/photo4.webp";
 import photo5 from "../../../public/assets/gallery/photo5.webp";
-import photo99 from "../../../public/assets/photo99.webp";
 import { Modal } from "../common/modal";
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-import banner_haji1 from "../../../public/assets/gallery/haji/photo1.webp";
+import banner_haji1 from "../../../public/assets/photo100.webp";
 import banner_haji2 from "../../../public/assets/gallery/haji/photo8.webp";
 import banner_haji3 from "../../../public/assets/gallery/haji/photo9.webp";
 import banner_haji4 from "../../../public/assets/gallery/haji/photo10.webp";
@@ -101,7 +100,7 @@ export const GallerySection = () => {
     <>
       {/* popup haji */}
       <Modal isOpen={isOpenHaji} onClick={() => setIsOpenHaji(false)}>
-        <div className="h-fit w-full">
+        <div className="h-full w-full">
           <Carousel
             showThumbs={false}
             autoPlay
